@@ -1,0 +1,152 @@
+body {
+	background-color: #00AA90;
+	color:white;
+}
+
+/*MENU BURGER*/
+header {
+    width:100%; 
+    height:70px; 
+    line-height:50px;
+    position: fixed;
+    z-index: 3000;
+    opacity: 0.9;
+}
+
+.previous {
+    width: 30px;
+    padding: 20px 15px;
+    position: relative;
+    z-index: 1000000000;
+}
+
+a:link{
+    text-decoration: none;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:12px 20px 0px 20px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:2px;
+  padding:12px 20px 0px 20px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu {
+    z-index:1000000; 
+    font-weight:bold; 
+    font-size:0.8em; 
+    width:100%; 
+    background:#131313;  
+    position:absolute; 
+    text-align:center;
+    }
+.menu ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+    list-style-image: none;
+    }
+.menu li {
+    display: block;   
+    padding:5px 0 5px 0; 
+    border-bottom:#1d1f20 1px solid;
+    }
+.menu li:hover {
+    display: block;    
+    background:#181818; 
+    padding:5px 0 5px 0; 
+    border-bottom:#1d1f20 1px solid; 
+    background-color: #CDCDCD;
+    transition: 1s;   
+}
+.menu ul li a { 
+    text-decoration:none;  
+    margin: 0px; 
+    color:#fff;
+}
+.menu ul li a:hover {  
+    color: #fff; 
+    text-decoration:none;}
+.menu a {
+    text-decoration:none; 
+    color:white;
+}
+.menu a:hover{
+    text-decoration:none; 
+    color:black;
+}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+/*BACKGROUND IMAGE HEADER*/
+.background-image {
+    background: url(../img/background.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.background-image h1 {
+    position: absolute;
+    top: 70%;
+    right: 3%;
+    font-size: 6em;
+}
+
+/*PAGE 2*/
+.recherche {
+    text-align: center;
+    position: relative;
+    top: -50%;
+}
+
+.recherche input {
+    width: 40%;
+    padding: 2%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+.recherche input,.recherche button {
+    display: inline-table;
+}
+
+button{
+    margin-left: -3px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #063D99;
+    padding: 2.2%;
+    color: white;
+    font-weight: 900;
+}

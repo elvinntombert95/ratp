@@ -1,0 +1,129 @@
+<html>
+<head>
+	<title>RATP | Retard A Temps Plein</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">		
+<!--SCROLL DOWN-->
+		<link rel="javascript" type="text/javascript" href="js/scrollto.js">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/scrollto.js"></script>
+<!--/SCROLL DOWN-->
+		<script src="js/navbar.js"></script>
+	<!-- FADE PAGE -->
+		<!-- animsition.css -->
+		<link rel="stylesheet" href="dist/css/animsition.min.css">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- animsition.js -->
+		<script src="dist/js/animsition.min.js"></script>
+		<script type="text/javascript" src="js/fade.js"></script>
+	<!-- /FADE PAGE -->
+</head>
+<body class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="800">
+	<header class="header">
+		<nav>
+			<img src="img/logo.png">
+		</nav>
+	</header>
+
+	<nav class="left-nav">
+		<ul>
+			<li><a href=".page-one" class="scrollTo"><div class="circle"></div></a></li>
+			<li><a href=".page-two" class="scrollTo"><div class="circle"></div></a></li>
+			<li><a href=".page-three" class="scrollTo"><div class="circle"></div></a></li>
+			<li><a href=".page-four" class="scrollTo"><div class="circle"></div></a></li>
+		</ul>
+	</nav>
+
+	<div class="page-one">
+		<video src="img/background-1080p.mp4" loop autoplay></video>
+		<h1>Envie d’énerver plus de <b>10 millions</b> de voyageurs 
+		aujourd’hui ?</h1>
+		<div class="bouton">
+			<a href=".page-two" class="scrollTo">
+				<button class="button-1">le concept</button>
+			</a>
+			<a href="admin" class="animsition-link">
+				<button class="button-2">c'est parti</button>
+			</a>
+		</div>
+			
+	</div>
+
+	<div class="page-two">
+		<h2>RATP : Retard A Temps Plein</h2>
+			<p>Nous avons tous un jour été confrontés à prendre 
+			les transports en commun et faire face à des 
+			situations tels que des trains bondés, de longues 
+			attentes sur le quai, des rames supprimées sans 
+			avertissement ou encore information au compte-goutte…
+			Que diriez-vous de prendre le contrôle en 
+			provocant tous ces imprévus ?</p>
+				<div class="arrow">
+					<a href=".page-three" class="scrollTo wobble"><img src="img/arrow.png"></a>
+				</div>	
+	</div>
+
+	<div class="page-three">
+		<h2>Rien de plus simple...</h2>
+			<div class="bloc-1">
+				<h3>Créez</h3>
+			</div>
+			<div class="bloc-2">
+				<h3>Regardez</h3>
+			</div>
+			<div class="bloc-3">
+				<h3>Modifiez</h3>
+			</div>
+			<div class="bloc-4">
+				<h3>Supprimez</h3>
+			</div>
+	</div>
+
+	<div class="page-four">
+		<h2>Qu'attendez-vous ?</h2>
+			<a href="admin" class="animsition-link"><button>commencer</button></a>
+	</div>
+
+	<script type="text/javascript">
+//NAVBAR A AFFICHER
+				$( ".cross" ).hide();
+	$( ".menu" ).hide();
+	$( ".hamburger" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".hamburger" ).hide();
+	$( ".cross" ).show();
+	});
+	});
+
+	$( ".cross" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".cross" ).hide();
+	$( ".hamburger" ).show();
+	});
+	});
+//NAVBAR A AFFICHER - FIN
+
+    // DEBUT NAVBAR
+      (function ($) {
+        $(document).ready(function(){
+          $(function () {
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 50) {
+                      $('.header').css({"padding": "0" , "-webkit-transition": "0.5s" , "-moz-transition": "0.5s" , "background-color" : "#307156" , "opacity" : "0.8"});
+                      $('.menu').css({"-webkit-transition": "0.5s" , "-moz-transition": "0.5s" , "position" : "fixed" , "top" : "71px"});
+                  } else {
+                      $('.header').css({"padding": "20px 0" , "background": "none"});
+                      $('.menu').css({"position" : "fixed" , "top" : "111px"});
+                  }
+              });
+          });
+        });
+      }(jQuery));
+</script>
+
+
+</body>
+</html>
