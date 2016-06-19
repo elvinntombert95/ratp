@@ -356,7 +356,7 @@ a:link {
 	.bloc-4 {
 		width: 50%;
 		height: 50vh;
-		background: #ACE3CD;
+		background: #8ddcbd;
 		float: left;
 	}
 
@@ -394,3 +394,138 @@ a:link {
 			margin-right: 5%;
 			padding: 20px;
 	}
+
+
+/*---------------------RESPONSIVE----------------------*/
+@media screen and (max-width: 768px) {
+	video {
+		display: none;
+	}
+
+	/*HEADER*/
+	.left-nav {
+		display: none;
+	}
+
+	/*PAGE ONE*/
+	.page-one {
+		background: url(../img/back-resp.jpg) no-repeat;
+		background-size: cover;
+	    height: auto;
+	}
+
+	.page-one h1 {
+	    font-size: 25px;
+	    font-weight: lighter;
+	    margin-top: -1vh;
+	    width: 90%;
+	}
+
+	.page-one button {
+	    margin: 21vh 3% 30vh 3%;
+	    padding: 20px;
+	}
+
+	.button-1,.button-2 {
+		width: 40%;
+	}
+
+	/*PAGE TWO*/
+	.page-two h2 {
+  		font-size: 35px;
+	    width: 90%;
+	    margin: auto;
+		padding-top: 20vh;
+	    font-weight: bold;
+	    line-height: 1.4;
+	}
+
+	.page-two p {
+	    font-size: 22px;
+	    width: 90%;
+	    margin: 10vh auto 2vh;
+	    line-height: 2;
+	    text-align: justify;
+	}
+
+	.arrow {
+	    width: 100px;
+	    padding: 5vh 0 10vh;
+	}
+
+	/*PAGE THREE*/
+	.page-three h2 {
+	    text-align: center;
+	    font-size: 40px;
+	    width: 90%;
+	    padding-top: 0;
+	}
+
+	.bloc-1,.bloc-2,.bloc-3,.bloc-4 {
+	    width: 100%;
+	    float: none;
+		height: 30vh;
+	}
+
+	.page-three h3 {
+	    font-weight: 100;
+	    font-size: 3em;
+	    padding-top: 10vh;
+	}
+
+	/*PAGE FOUR*/
+	.page-four h2 {
+	    font-size: 40px;
+	    width: 90%;
+   		padding-top: 20vh;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	/*PAGE ONE*/
+	.page-one h1 {
+	    font-size: 25px;
+	    margin-top: -8vh;
+		padding-bottom: 15vh;
+	}
+	
+	.button-1, .button-2 {
+	    width: 80%;
+	}
+
+	.page-one button {
+	    margin: 0vh 5% 5vh;
+	}
+
+	/*PAGE TWO*/
+	.page-two h2 {
+	    font-size: 30px;
+	    width: 90%;
+	}
+
+	/*PAGE THREE*/
+	.page-three h2 {
+	    text-align: center;
+	    font-size: 30px;
+	}
+
+	.page-three h3 {
+	    font-size: 2em;
+	}
+
+	.page-two p {
+	    font-size: 19px;
+	    margin: 10vh auto 2vh;
+	    text-align: center;
+	}
+
+	/*PAGE FOUR*/
+	.page-four button {
+	    width: 80%;
+	}
+
+	.page-four h2 {
+	    font-size: 30px;
+	    padding-top: 25vh;
+	}
+}
