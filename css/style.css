@@ -12,6 +12,11 @@ body {
 	font-family: 'Raleway-Light';
 }
 
+button {
+	cursor: pointer;
+	outline: none;
+}
+
 a:link {
 	text-decoration: none;
 }
@@ -261,6 +266,18 @@ a:link {
 	    border-radius: 15px;
 	    font-size: 20px;
 	    font-weight: bold;
+	    cursor: pointer;
+
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.button-1:hover {
+	    color: #4caa83;
+	    background: white;		
 	}
 
 	.button-2 {
@@ -272,6 +289,18 @@ a:link {
 	    border-radius: 15px;
 	    font-size: 20px;
 	    font-weight: bold;
+	    cursor: pointer;
+
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.button-2:hover {
+	    background: #4caa83;
+	    color: white;		
 	}
 
 	/*PAGE TWO*/
@@ -389,10 +418,21 @@ a:link {
 	    border-radius: 15px;
 	    font-size: 20px;
 	    font-weight: bold;
-	    	margin-top: 15vh;
-			margin-left: 5%;
-			margin-right: 5%;
-			padding: 20px;
+		margin-top: 15vh;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding: 20px;
+
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.page-four button:hover {
+	    color: white;
+	    background: #4caa83;		
 	}
 
 

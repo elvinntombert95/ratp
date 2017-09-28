@@ -67,7 +67,7 @@ require_once( '../connexion.php' );
 					<p><label>Temps d'attente :</label> <input type="time" name="temps" id="temps"></input></input>
 					</p>
 
-					<input type="submit" value="AJOUTER" id="add"></input>
+					<input type="submit" value="AJOUTER" id="add" href=".page-one"></input>
 			</form>
 		</div>
 
@@ -84,9 +84,9 @@ require_once( '../connexion.php' );
 						$sql = "SELECT id, ligne, numlettre, motif, temps FROM `ajouter_retard`";
 						$results = $connexion->query( $sql );
 						while( $row = $results->fetchObject()){
-						    echo "<li>".$row->ligne.' : '.$row->numlettre.
-						    ' <br> MOTIF : '.$row->motif.
-						    ' <br> TEMPS D\'ATTENTE : '.$row->temps."<br>"
+						    echo "<li><span>".$row->ligne.' :</span> '.$row->numlettre.
+						    ' <br> <span>MOTIF :</span> '.$row->motif.
+						    ' <br> <span>TEMPS D\'ATTENTE :</span> '.$row->temps."<br>"
 						         ."<a href=\"update.php?id=".$row->id."\">MODIFIER</a>  "
 						         ."<a href=\"delete.php?id=".$row->id."\">SUPPRIMER</a>  <br>"
 						         ."</li>\n";

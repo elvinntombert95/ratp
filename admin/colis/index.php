@@ -15,7 +15,7 @@ require_once( '../connexion.php' );
 </head>
 <body>
 	<header class="header"><!-- DEBUT HEADER -->
-		<button class="hamburger">☰</button>
+<!-- 		<button class="hamburger">☰</button>
 			<button class="cross">&#735;</button>
 				<div class="menu">
 					<ul>
@@ -24,7 +24,7 @@ require_once( '../connexion.php' );
 						<a href="../retard" class="animsition-link"><li>Ajouter un retard</li></a>
 						<a href="#" class="animsition-link"><li>Ajouter un colis suspect</li></a>
 					</ul>
-				</div>
+				</div> -->
 		<a href="../"><img src="../img/arrow.png" class="previous"></a> 
 	</header><!-- FIN HEADER -->
 
@@ -85,11 +85,11 @@ require_once( '../connexion.php' );
 					$sql = "SELECT id, ligne, numlettre, station, lacheur, interrompre, wait FROM `ajouter_colis`";
 					$results = $connexion->query( $sql );
 					while( $row = $results->fetchObject()){
-					    echo "<li>".$row->ligne.' : '.$row->numlettre.
-					    ' <br> STATION : '.$row->station.
-					    ' <br> NOM DU LACHEUR n°2 : '.$row->lacheur.
-					    ' <br> TRAFFIC INTERROMPU : '.$row->interrompre.
-					    ' <br> TEMPS D\'ATTENTE : '.$row->wait."<br>"
+					    echo "<li> <span>".$row->ligne.'</span> : '.$row->numlettre.
+					    ' <br> <span>STATION :</span> '.$row->station.
+					    ' <br> <span>NOM DU LACHEUR n°2 :</span> '.$row->lacheur.
+					    ' <br> <span>TRAFFIC INTERROMPU :</span> '.$row->interrompre.
+					    ' <br> <span>TEMPS D\'ATTENTE :</span> '.$row->wait."<br>"
 					         ."<a href=\"update.php?id=".$row->id."\">MODIFIER</a>  "
 					         ."<a href=\"delete.php?id=".$row->id."\">SUPPRIMER</a>  <br>"
 					         ."</li>\n";

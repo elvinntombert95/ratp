@@ -14,5 +14,5 @@ $stmt->bindValue( ':interrompre' , $_POST['interrompre'] );
 $stmt->bindValue( ':wait' , $_POST['wait'] );
 
 $stmt->execute();
-header( 'Location:addcolis.php' );
+header( 'Location:index.php' );
 
