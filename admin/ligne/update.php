@@ -19,20 +19,21 @@ $row = $results->fetchObject()
 </head>
 <body>
 
-	<header id="page1">
-		<h1 id="titre">BIENVENU SUR LE FAUX SITE DE LA RATP</h1>
-			<nav class="primary">
-	 				<ul>
-	 					<li><a href="">ajouter une ligne</a></li>
-	 					<li><a href="">rechercher une ligne</a></li>
-	 					<li><a href="">ajouter un colis suspect</a></li>
-	 					<li><a href="">ajouter un retard</a></li>
-	 					
-	 				</ul>
-	 			</nav>
-	</header>
+	<header class="header"><!-- DEBUT HEADER -->
+<!-- 		<button class="hamburger">☰</button>
+			<button class="cross">&#735;</button>
+				<div class="menu">
+					<ul>
+					    <a href="#" class="animsition-link"><li>Ajouter une ligne</li></a>
+						<a href="../rechercher" class="animsition-link"><li>Rechercher une ligne</li></a>
+						<a href="../retard" class="animsition-link"><li>Ajouter un retard</li></a>
+						<a href="../colis" class="animsition-link"><li>Ajouter un colis suspect</li></a>
+					</ul>
+				</div> -->
+		<a href="../"><img src="../img/arrow.png" class="previous"></a> 
+	</header><!-- FIN HEADER -->
 	
-	<div id="addligne">
+	<div class="addligne update">
 		<form action="do-update.php" method="post">
 			<input type="hidden" name="id" value="<?=$row->id?>">
 				<h2>MODIFIER UNE LIGNE</h2><br><br>

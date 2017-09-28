@@ -12,6 +12,11 @@ body {
 	font-family: 'Raleway-Light';
 }
 
+button {
+	cursor: pointer;
+	outline: none;
+}
+
 a:link {
 	text-decoration: none;
 }
@@ -152,7 +157,7 @@ a:link {
 	}
 
 	nav img {
-		margin: auto;
+		margin: auto 47%;
 		display: block;
 		width: 50px;
 		padding: 10px;
@@ -261,6 +266,18 @@ a:link {
 	    border-radius: 15px;
 	    font-size: 20px;
 	    font-weight: bold;
+	    cursor: pointer;
+
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.button-1:hover {
+	    color: #4caa83;
+	    background: white;		
 	}
 
 	.button-2 {
@@ -272,6 +289,18 @@ a:link {
 	    border-radius: 15px;
 	    font-size: 20px;
 	    font-weight: bold;
+	    cursor: pointer;
+
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.button-2:hover {
+	    background: #4caa83;
+	    color: white;		
 	}
 
 	/*PAGE TWO*/
@@ -389,10 +418,21 @@ a:link {
 	    border-radius: 15px;
 	    font-size: 20px;
 	    font-weight: bold;
-	    	margin-top: 15vh;
-			margin-left: 5%;
-			margin-right: 5%;
-			padding: 20px;
+		margin-top: 15vh;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding: 20px;
+
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.page-four button:hover {
+	    color: white;
+	    background: #4caa83;		
 	}
 
 
@@ -527,30 +567,5 @@ a:link {
 	.page-four h2 {
 	    font-size: 30px;
 	    padding-top: 25vh;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	.page-one {
-		padding-top: 30vh;
-	}
-	
-	.page-one h1 {
-	    font-size: 19px;
-	    margin-top: -2vh;
-	    padding-bottom: 15vh;
-	}
-
-	.page-one button {
-        font-size: 15px;
-        margin: 0vh 5% 10vh;
-	}
-	.page-three h2 {
-	    text-align: center;
-	    font-size: 25px;
-	}
-
-	.page-four button {
-	    font-size: 15px;
 	}
 }

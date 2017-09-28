@@ -7,31 +7,41 @@ $row = $results->fetchObject()
 
 <html>
 <head>
-	<title>RATP | Retard A Temps Plein</title>
+	<title>RATP | Retard</title>
 	<meta charset="utf-8">
 
 	<!--CSS Principal-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
-	<!--CSS Principal-->	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- FADE PAGE -->
+		<!-- animsition.css -->
+		<link rel="stylesheet" href="dist/css/animsition.min.css">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- animsition.js -->
+		<script src="dist/js/animsition.min.js"></script>
+		<script type="text/javascript" src="js/fade.js"></script>
+	<!-- /FADE PAGE -->
 
 </head>
 <body>
+	<header class="header"><!-- DEBUT HEADER -->
+<!-- 		<button class="hamburger">☰</button>
+			<button class="cross">&#735;</button>
+				<div class="menu">
+					<ul>
+					    <a href="#" class="animsition-link"><li>Ajouter une ligne</li></a>
+						<a href="../rechercher" class="animsition-link"><li>Rechercher une ligne</li></a>
+						<a href="../retard" class="animsition-link"><li>Ajouter un retard</li></a>
+						<a href="../colis" class="animsition-link"><li>Ajouter un colis suspect</li></a>
+					</ul>
+				</div> -->
+		<a href="../"><img src="../img/arrow.png" class="previous"></a> 
+	</header><!-- FIN HEADER -->
 
-	<header id="page1">
-		<h1 id="titre">BIENVENU SUR LE FAUX SITE DE LA RATP</h1>
-			<nav class="primary">
-	 				<ul>
-						<li><a href="../index.php">ajouter une ligne</a></li>
-	 					<li><a href="../rechercher/searchline.php">rechercher une ligne</a></li>
-	 					<li><a href="../colis/addcolis.php">ajouter un colis suspect</a></li>
-	 					<li><a href="addlate.php">ajouter un retard</a></li>	
-	 				</ul>
-	 			</nav>
-	</header>
-	
-	<div id="addligne">
+	<div class="addligne update">
 			<form action="do-update.php" method="post">
 				<input type="hidden" name="id" value="<?=$row->id?>">
 					<h2>MODIFIER UN RETARD</h2><br><br>

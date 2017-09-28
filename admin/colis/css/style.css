@@ -3,6 +3,27 @@ body {
 	color:white;
 }
 
+.update form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 50px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.update form h2 {
+    font-size: 2em;
+}
+
 /*MENU BURGER*/
 header {
     width:100%; 
@@ -123,7 +144,7 @@ a:link{
 
 /*PAGE ONE*/
 .page-one {
-    background: url(../img/page-one.jpg) no-repeat;
+    background: url(../img/page-one.jpg);
     height: 189vh;
 }
 
@@ -180,12 +201,29 @@ a:link{
         width: 50%;
         border-radius: 5px;
         padding: 20px 10px;
-        border: none;
+        border: 5px solid transparent;
         background: white;
         color: #4caa83;
         font-weight: bold;
         margin: 50px auto;
         font-size: 20px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        outline: none;
+    }
+
+    #add:hover {
+        width: 300px;
+        background: #4caa83;
+        color: white;
+        text-transform: uppercase;
+        border: 5px solid;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
     }
 
     .bloc-1 form label {
@@ -245,15 +283,27 @@ a:link{
         }
 
         .views li a {
-            display: block;
+            display: inline-block;
             margin-top: 15px;
             text-align: center;
             border: 1px solid #00AA90;
-            width:40%;
-            margin:auto;
+            width: 100%;
+            max-width: 150px;
+            padding: 10px 0;
+            border-radius: 10px;
         }
 
         .views li {
+            border-top: 1px solid;
+            padding: 10px 0;
+        }
+
+        .views li span {
+            color: black;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 10px 0;
+            display: inline-block;
         }
 
         .thead {

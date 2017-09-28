@@ -11,21 +11,20 @@ require_once( '../connexion.php' );
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- FADE PAGE -->
 		<!-- animsition.css -->
-		<link rel="stylesheet" href="dist/css/animsition.min.css">
+		<link rel="stylesheet" href="../dist/css/animsition.min.css">
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- animsition.js -->
-		<script src="dist/js/animsition.min.js"></script>
-		<script type="text/javascript" src="js/fade.js"></script>
+		<script src="../dist/js/animsition.min.js"></script>
+		<script type="text/javascript" src="../js/fade.js"></script>
 	<!-- /FADE PAGE -->
 
 </head>
 <body>
 	<header class="header"><!-- DEBUT HEADER -->
-		<button class="hamburger">☰</button>
+<!-- 		<button class="hamburger">☰</button>
 			<button class="cross">&#735;</button>
 				<div class="menu">
 					<ul>
@@ -34,7 +33,7 @@ require_once( '../connexion.php' );
 						<a href="../retard" class="animsition-link"><li>Ajouter un retard</li></a>
 						<a href="../colis" class="animsition-link"><li>Ajouter un colis suspect</li></a>
 					</ul>
-				</div>
+				</div> -->
 		<a href="../"><img src="../img/arrow.png" class="previous"></a> 
 	</header><!-- FIN HEADER -->
 
@@ -87,7 +86,10 @@ require_once( '../connexion.php' );
 					$sql = "SELECT id, ligne, numlettre, dir1, dir2, conducteur FROM `ajouterligne`";
 					$results = $connexion->query( $sql );
 					while( $row = $results->fetchObject()){
-					    echo "<li>".$row->ligne.' : '.$row->numlettre.' <br> TERMINUS n°1 : '.$row->dir1.' <br> TERMINUS n°2 : '.$row->dir2.' <br> LE CONDUCTEUR : '.$row->conducteur."<br>"
+					    echo "<li><span>".$row->ligne.' :</span> '.$row->numlettre.
+					    ' <br> <span>TERMINUS n°1 :</span> '.$row->dir1.
+					    ' <br> <span>TERMINUS n°2 :</span> '.$row->dir2.
+					    ' <br> <span>LE CONDUCTEUR :</span> '.$row->conducteur."<br>"
 					         ."<a href=\"update.php?id=".$row->id."\">MODIFIER</a>  "
 					         ."<a href=\"delete.php?id=".$row->id."\">SUPPRIMER</a>  <br>"
 					         ."</li>\n";
@@ -99,7 +101,7 @@ require_once( '../connexion.php' );
 	<footer></footer>
 
 	<script type="text/javascript">
-//NAVBAR A AFFICHER
+		//NAVBAR A AFFICHER
 				$( ".cross" ).hide();
 	$( ".menu" ).hide();
 	$( ".hamburger" ).click(function() {
@@ -115,21 +117,7 @@ require_once( '../connexion.php' );
 	$( ".hamburger" ).show();
 	});
 	});
-
-     (function ($) {
-        $(document).ready(function(){
-          $(function () {
-              $(window).scroll(function () {
-                  if ($(this).scrollTop() > 50) {
-                      $('.header').css({"padding": "0" , "-webkit-transition": "0.5s" , "-moz-transition": "0.5s" , "background-color" : "black"});
-                  } else {
-                      $('.header').css({"padding": "0" , "background": "none"});
-                  }
-              });
-          });
-        });
-      }(jQuery));
-    </script>
+	</script>
 </body>
 </html>
 
